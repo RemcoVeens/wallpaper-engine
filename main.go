@@ -37,7 +37,7 @@ func main() {
 		}
 		randomFile := jpgFiles[rand.Intn(len(jpgFiles))]
 		log.Printf("Setting wallpaper to %s", randomFile)
-		cmd := exec.Command("swww", "img", randomFile)
+		cmd := exec.Command("awww", "img", randomFile)
 		var out bytes.Buffer
 		cmd.Stdout = &out
 		err = cmd.Run()
@@ -61,7 +61,7 @@ func main() {
 		file := os.Args[2]
 		parced_file := fmt.Sprintf("%s/%s", FOLDER, file)
 		log.Printf("Setting wallpaper to %s", parced_file)
-		cmd := exec.Command("swww", "img", parced_file)
+		cmd := exec.Command("awww", "img", parced_file)
 		var out bytes.Buffer
 		cmd.Stdout = &out
 		err = cmd.Run()
