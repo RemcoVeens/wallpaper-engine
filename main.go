@@ -17,7 +17,7 @@ func main() {
 	}
 	FOLDER := uhdir + "/Pictures/bobby"
 	if len(os.Args) < 2 {
-		log.Fatal("Usage: wallpaper-engine <argument>")
+		log.Fatal("Usage: wallpaper-engine <random|list|set>")
 	}
 	switch os.Args[1] {
 	case "random":
